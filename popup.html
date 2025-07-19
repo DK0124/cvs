@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .primary {
+      background: #007bff;
+      color: white;
+    }
+    .success {
+      background: #28a745;
+      color: white;
+    }
+    .info {
+      margin: 10px 0;
+      padding: 8px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <h3>物流單截圖測試</h3>
+  <div class="info">
+    點擊下方按鈕在當前頁面啟動測試工具
+  </div>
+  <button id="activate" class="primary">啟動測試工具</button>
+  <button id="close" class="success">關閉視窗</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
