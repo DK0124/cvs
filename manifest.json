@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "BV 物流單截圖測試工具",
+  "version": "1.0.0",
+  "description": "測試抓取超商物流單並截圖",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.min.js", "test-capture.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["html2canvas.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
